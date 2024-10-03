@@ -149,7 +149,7 @@ const Navbar_Admin = ({ onLogout }) => {
       </li>
       <li>
         <Link
-          to="/course"
+          to="/course2"
           className="text-white flex items-center text-lg bg-white bg-opacity-10 backdrop-blur-md hover:bg-purple-500 hover:bg-opacity-20 p-3 rounded-xl shadow-lg transition-all duration-300"
         >
           <PiBooksLight className="text-2xl mr-2" />
