@@ -222,11 +222,7 @@ const Navbar_Admin = ({ onLogout }) => {
     </ul>
 
     {/* Footer or Bottom Section (Optional) */}
-    <div className="mt-auto pt-6 border-t border-gray-200">
-      <a href="#" className="text-sm text-gray-300 hover:text-purple-500 transition-all duration-300">
-        Terms & Conditions
-      </a>
-    </div>
+    
   </div>
 </div>
 

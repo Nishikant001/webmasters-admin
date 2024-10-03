@@ -124,20 +124,28 @@ const User_Admin = () => {
                   }`}
                 >
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/admin-login"
                       className="block px-4 py-2 text-white bg-white bg-opacity-10 hover:bg-purple-500 hover:bg-opacity-20 rounded-xl transition-all duration-300"
                     >
                       Log In
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/admin-sign"
                       className="block px-4 py-2 text-white bg-white bg-opacity-10 hover:bg-purple-500 hover:bg-opacity-20 rounded-xl transition-all duration-300"
                     >
                       Sign Up
-                    </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/stu-sign"
+                      className="block px-4 py-2 text-white bg-white bg-opacity-10 hover:bg-purple-500 hover:bg-opacity-20 rounded-xl transition-all duration-300"
+                    >
+                      Student-SignUp
+                    </Link>
                   </li>
                 </ul>
               </li>
