@@ -3,11 +3,12 @@ import axios from 'axios';
 
 const BatchDetails = ({ batchId }) => {
   const [batchDetails, setBatchDetails] = useState(null);
+  const URL='https://webmasters-backend-2.onrender.com'
 
   useEffect(() => {
     const fetchBatchDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/batch/batch/${batchId}`);
+        const response = await axios.get(`${URL}/batch/batch/${batchId}`);
         setBatchDetails(response.data); // Set the batch details
       } catch (error) {
         console.error('Error fetching batch details:', error);

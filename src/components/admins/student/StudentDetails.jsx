@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const StudentDetails = ({ studentId, onDeleteStudent }) => {
+   const URL='https://webmasters-backend-2.onrender.com'
   const [student, setStudent] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [updatedStudent, setUpdatedStudent] = useState({
@@ -20,7 +21,7 @@ const StudentDetails = ({ studentId, onDeleteStudent }) => {
   useEffect(() => {
     const fetchStudentDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/students/student/${studentId}`);
+        const response = await axios.get(`${URL}/students/student/${studentId}`);
         setStudent(response.data);
         setUpdatedStudent(response.data);  // Populate the form with student data
       } catch (error) {

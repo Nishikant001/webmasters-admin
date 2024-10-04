@@ -20,6 +20,7 @@ import CourseManagement2 from "./components/admins/course managemnet/course mana
 import StudentRegistrationForm from "./components/student/Signup.jsx";
 
 
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [role, setRole] = useState(null);
@@ -77,6 +78,7 @@ function App() {
             <Route path="/admin-login" element={<AdminLogin onLogin={handleLogin} />} />
             <Route path="/admin-sign" element={<AdminSignupForm />} />
             <Route path="/stu-sign" element={<StudentRegistrationForm />} />
+           
             
            
             
