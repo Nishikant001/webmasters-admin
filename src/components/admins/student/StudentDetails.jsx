@@ -49,7 +49,7 @@ const StudentDetails = ({ studentId, onDeleteStudent }) => {
   // Handle form submission for updating student details
   const handleUpdate = async () => {
     try {
-      await axios.put(`http://localhost:5000/students/student/${studentId}`, updatedStudent);
+      await axios.put(`${URL}/students/student/${studentId}`, updatedStudent);
       setStudent(updatedStudent);  // Update the state with the new data
       setIsEditing(false);  // Disable editing mode
     } catch (error) {
@@ -61,7 +61,7 @@ const StudentDetails = ({ studentId, onDeleteStudent }) => {
   const handleDelete = async () => {
     if (window.confirm(`Are you sure you want to delete ${student.name}?`)) {
       try {
-        await axios.delete(`http://localhost:5000/students/student/${studentId}`);
+        await axios.delete(`${URL}/students/student/${studentId}`);
         onDeleteStudent(studentId);  // Call parent component method to update UI
       } catch (error) {
         console.error('Error deleting student:', error);
